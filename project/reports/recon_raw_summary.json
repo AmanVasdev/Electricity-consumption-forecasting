@@ -1,0 +1,178 @@
+{
+  "file_size_bytes": 131244504,
+  "file_size_mb": 125.16451263427734,
+  "total_rows": 2269530,
+  "columns": [
+    "timestamp",
+    "power",
+    "current",
+    "voltage",
+    "frequency",
+    "power_factor"
+  ],
+  "inferred_dtypes": {
+    "timestamp": "int64",
+    "power": "float64",
+    "current": "float64",
+    "voltage": "float64",
+    "frequency": "float64",
+    "power_factor": "float64"
+  },
+  "head_5": [
+    {
+      "timestamp": 1376073000,
+      "power": 28368.60645,
+      "current": NaN,
+      "voltage": 240.99646,
+      "frequency": 50.32322,
+      "power_factor": 0.93397
+    },
+    {
+      "timestamp": 1376073060,
+      "power": 28411.98828,
+      "current": NaN,
+      "voltage": 241.19509,
+      "frequency": 50.35931,
+      "power_factor": 0.93536
+    },
+    {
+      "timestamp": 1376073120,
+      "power": 28752.53809,
+      "current": NaN,
+      "voltage": 241.38574,
+      "frequency": 50.39784,
+      "power_factor": 0.93675
+    },
+    {
+      "timestamp": 1376073180,
+      "power": 29031.44629,
+      "current": NaN,
+      "voltage": 241.72626,
+      "frequency": 50.44616,
+      "power_factor": 0.93685
+    },
+    {
+      "timestamp": 1376073240,
+      "power": 28487.45801,
+      "current": NaN,
+      "voltage": 241.94244,
+      "frequency": 50.44468,
+      "power_factor": 0.93448
+    }
+  ],
+  "min_timestamp": 1376073000,
+  "min_datetime_utc": "2013-08-09T18:30:00+00:00",
+  "min_datetime_kolkata": "2013-08-10T00:00:00+05:30",
+  "max_timestamp": 1514744940,
+  "max_datetime_utc": "2017-12-31T18:29:00+00:00",
+  "max_datetime_kolkata": "2017-12-31T23:59:00+05:30",
+  "timespan_days": 1604,
+  "missing_counts": {
+    "timestamp": 0,
+    "power": 3,
+    "current": 210818,
+    "voltage": 3836,
+    "frequency": 3,
+    "power_factor": 2
+  },
+  "missing_percentages": {
+    "timestamp": 0.0,
+    "power": 0.00013218595920741298,
+    "current": 9.28905984939613,
+    "voltage": 0.16902177983987873,
+    "frequency": 0.00013218595920741298,
+    "power_factor": 8.8123972804942e-05
+  },
+  "duplicate_timestamps": 0,
+  "non_monotonic_steps": 0,
+  "exact_duplicate_rows_in_chunks": 0,
+  "top_deltas": [
+    {
+      "delta_seconds": 60,
+      "count": 2269040,
+      "percentage": 99.97845367915545
+    },
+    {
+      "delta_seconds": 120,
+      "count": 244,
+      "percentage": 0.010751129419364106
+    },
+    {
+      "delta_seconds": 180,
+      "count": 91,
+      "percentage": 0.004009642529353007
+    },
+    {
+      "delta_seconds": 240,
+      "count": 30,
+      "percentage": 0.0013218601745119802
+    },
+    {
+      "delta_seconds": 360,
+      "count": 29,
+      "percentage": 0.0012777981686949143
+    },
+    {
+      "delta_seconds": 300,
+      "count": 20,
+      "percentage": 0.0008812401163413201
+    },
+    {
+      "delta_seconds": 420,
+      "count": 10,
+      "percentage": 0.00044062005817066004
+    },
+    {
+      "delta_seconds": 480,
+      "count": 4,
+      "percentage": 0.00017624802326826402
+    },
+    {
+      "delta_seconds": 720,
+      "count": 3,
+      "percentage": 0.00013218601745119802
+    },
+    {
+      "delta_seconds": 900,
+      "count": 2,
+      "percentage": 8.812401163413201e-05
+    }
+  ],
+  "numerical_stats": {
+    "power": {
+      "count": 2269527,
+      "mean": 27785.8197265097,
+      "std": 14018.361052033535,
+      "min": 0.0,
+      "max": 95786.33203
+    },
+    "current": {
+      "count": 2058712,
+      "mean": 41.29569130695794,
+      "std": 21.062970872129128,
+      "min": 0.0,
+      "max": 144.93602
+    },
+    "voltage": {
+      "count": 2265694,
+      "mean": 241.21545864658248,
+      "std": 3.2091430789515365,
+      "min": 0.0,
+      "max": 269.17447
+    },
+    "frequency": {
+      "count": 2269527,
+      "mean": 49.98935748154571,
+      "std": 0.1708704839469609,
+      "min": 0.0,
+      "max": 52.848
+    },
+    "power_factor": {
+      "count": 2269528,
+      "mean": 0.6832838969556665,
+      "std": 0.6544808287305375,
+      "min": -0.999,
+      "max": 1.0
+    }
+  }
+}

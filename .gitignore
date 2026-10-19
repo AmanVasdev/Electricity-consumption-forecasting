@@ -1,0 +1,23 @@
+
+# Python virtual environment
+.venv/
+
+# Large datasets
+energy_dataset/
+iiitd_calender_schedule/
+IIITD_occupancy_dataset/
+weather_comparison/
+
+# ZIP files
+*.zip
+
+# Large trained models
+project/models/*.pkl
+project/models/*.joblib
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Secret keys
+.env

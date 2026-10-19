@@ -1,0 +1,5 @@
+Model,Hardware,Split,MAE_Watts,RMSE_Watts,R2,MAPE_Percent,Zero_Targets,Sample_Count,Training_Time_Sec
+Random Forest,CPU (n_jobs=-1),Validation,1541.73,2627.33,0.9601,5.23,0,5756,25.3
+XGBoost,GPU (NVIDIA GeForce RTX 4050 Laptop GPU),Validation,1507.65,2458.22,0.965,5.09,0,5756,1.88
+Random Forest,CPU (n_jobs=-1),Test,2763.39,4982.39,0.9049,8.03,0,5660,25.3
+XGBoost,GPU (NVIDIA GeForce RTX 4050 Laptop GPU),Test,2574.83,4469.55,0.9234,7.63,0,5660,1.88

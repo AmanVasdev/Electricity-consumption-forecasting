@@ -1,0 +1,29 @@
+{
+  "total_rows": 38520,
+  "splits": {
+    "train": {
+      "start_idx": 0,
+      "end_idx": 26963,
+      "num_rows": 26964,
+      "percentage": 70.0,
+      "start_timestamp": "2013-08-10 00:00:00+05:30",
+      "end_timestamp": "2016-09-06 11:00:00+05:30"
+    },
+    "validation": {
+      "start_idx": 26964,
+      "end_idx": 32741,
+      "num_rows": 5778,
+      "percentage": 15.0,
+      "start_timestamp": "2016-09-06 12:00:00+05:30",
+      "end_timestamp": "2017-05-05 05:00:00+05:30"
+    },
+    "test": {
+      "start_idx": 32742,
+      "end_idx": 38519,
+      "num_rows": 5778,
+      "percentage": 15.0,
+      "start_timestamp": "2017-05-05 06:00:00+05:30",
+      "end_timestamp": "2017-12-31 23:00:00+05:30"
+    }
+  }
+}
