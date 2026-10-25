@@ -1,0 +1,3 @@
+Model,Hardware,Split,MAE_Watts,RMSE_Watts,R2,MAPE_Percent,Zero_Targets,Sample_Count,Training_Time_Sec
+Transformer,"CPU (Intel64 Family 6 Model 186 Stepping 2, GenuineIntel)",Validation,2250.7,3454.75,0.931,7.7,0,5756,153.78
+Transformer,"CPU (Intel64 Family 6 Model 186 Stepping 2, GenuineIntel)",Test,4285.99,6752.64,0.8252,13.48,0,5660,153.78

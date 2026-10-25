@@ -1,0 +1,11 @@
+Model,Hardware,Split,MAE_Watts,RMSE_Watts,R2,MAPE_Percent,Zero_Targets,Sample_Count,Training_Time_Sec
+Random Forest,CPU (n_jobs=-1),Validation,1541.73,2627.33,0.9601,5.23,0,5756,25.3
+XGBoost,GPU (NVIDIA GeForce RTX 4050 Laptop GPU),Validation,1507.65,2458.22,0.965,5.09,0,5756,1.88
+Random Forest,CPU (n_jobs=-1),Test,2763.39,4982.39,0.9049,8.03,0,5660,25.3
+XGBoost,GPU (NVIDIA GeForce RTX 4050 Laptop GPU),Test,2574.83,4469.55,0.9234,7.63,0,5660,1.88
+LSTM,"CPU (Intel64 Family 6 Model 186 Stepping 2, GenuineIntel)",Validation,2300.73,3635.23,0.9235,7.62,0,5756,143.13
+LSTM,"CPU (Intel64 Family 6 Model 186 Stepping 2, GenuineIntel)",Test,5664.55,9192.45,0.6761,17.32,0,5660,143.13
+GRU,"CPU (Intel64 Family 6 Model 186 Stepping 2, GenuineIntel)",Validation,2089.19,3367.4,0.9344,6.79,0,5756,225.67
+GRU,"CPU (Intel64 Family 6 Model 186 Stepping 2, GenuineIntel)",Test,5408.78,8625.69,0.7148,15.66,0,5660,225.67
+Transformer,"CPU (Intel64 Family 6 Model 186 Stepping 2, GenuineIntel)",Validation,2250.7,3454.75,0.931,7.7,0,5756,153.78
+Transformer,"CPU (Intel64 Family 6 Model 186 Stepping 2, GenuineIntel)",Test,4285.99,6752.64,0.8252,13.48,0,5660,153.78
