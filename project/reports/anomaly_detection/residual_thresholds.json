@@ -1,0 +1,25 @@
+{
+    "validation_residual_median_watts": 120.605,
+    "validation_mad_watts": 901.21,
+    "robust_scale_watts": 1336.1339,
+    "scale_estimation_method": "1.4826 * MAD (Median Absolute Deviation)",
+    "positive_threshold": 3.5,
+    "negative_threshold": 3.5,
+    "positive_threshold_watts": 4797.07,
+    "negative_threshold_watts": -4555.86,
+    "calibration_sample_count": 5756,
+    "calibration_missing_targets_count": 22,
+    "validation_total_anomalies": 311,
+    "validation_anomaly_percentage": 5.4,
+    "validation_high_consumption_anomalies": 192,
+    "validation_low_consumption_anomalies": 119,
+    "threshold_selection_method": "Symmetric 3.5 robust scale cutoff calibrated on validation residual distribution. Yields 5.40% validation anomaly rate (311 hours), aligning with standard 3%-6% operational contamination for power systems and Hampel's outlier rule.",
+    "evaluation_summary": {
+        "test_sample_count": 5660,
+        "test_missing_targets_count": 118,
+        "test_total_anomalies": 849,
+        "test_anomaly_percentage": 15.0,
+        "test_high_consumption_anomalies": 510,
+        "test_low_consumption_anomalies": 339
+    }
+}

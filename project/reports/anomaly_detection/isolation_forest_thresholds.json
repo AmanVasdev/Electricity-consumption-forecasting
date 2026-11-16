@@ -1,0 +1,96 @@
+{
+    "calibration_timestamp": "2026-11-16T21:04:51.726535+00:00",
+    "model_configuration": {
+        "model_type": "IsolationForest",
+        "n_estimators": 300,
+        "max_samples": "auto",
+        "contamination": "auto",
+        "max_features": 1.0,
+        "bootstrap": false,
+        "random_state": 42,
+        "n_jobs": -1
+    },
+    "random_seed": 42,
+    "feature_count": 39,
+    "feature_names": [
+        "hour",
+        "day_of_week",
+        "day_of_month",
+        "month",
+        "week_of_year",
+        "is_weekend",
+        "power_lag_1",
+        "power_lag_2",
+        "power_lag_3",
+        "power_lag_6",
+        "power_lag_12",
+        "power_lag_24",
+        "power_lag_48",
+        "power_lag_168",
+        "energy_kwh_lag_1",
+        "energy_kwh_lag_2",
+        "energy_kwh_lag_3",
+        "energy_kwh_lag_6",
+        "energy_kwh_lag_12",
+        "energy_kwh_lag_24",
+        "energy_kwh_lag_48",
+        "energy_kwh_lag_168",
+        "power_rolling_mean_3",
+        "power_rolling_std_3",
+        "power_rolling_mean_6",
+        "power_rolling_std_6",
+        "power_rolling_mean_12",
+        "power_rolling_std_12",
+        "power_rolling_mean_24",
+        "power_rolling_std_24",
+        "power_rolling_mean_168",
+        "power_rolling_std_168",
+        "hour_sin",
+        "hour_cos",
+        "day_of_week_sin",
+        "day_of_week_cos",
+        "month_sin",
+        "month_cos",
+        "power_range_lag_1"
+    ],
+    "split_row_counts": {
+        "training_rows": 26964,
+        "validation_rows": 5778,
+        "test_rows": 5778
+    },
+    "imputation_strategy": {
+        "strategy": "median",
+        "imputer_type": "SimpleImputer",
+        "fitted_on": "training_features_only (indices 0 to 26963)",
+        "saved_path": "models\\anomaly_imputer.joblib"
+    },
+    "training_isolation_forest_confirmation": {
+        "fitted_on": "training_features_only (indices 0 to 26963)",
+        "saved_path": "models\\isolation_forest.joblib",
+        "validation_or_test_leakage": false
+    },
+    "threshold_calibration": {
+        "calibration_split": "validation_only",
+        "calibrated_percentile": 95.0,
+        "validation_threshold": 0.080704,
+        "score_direction": "Higher score indicates higher anomaly likelihood: anomaly_score = -decision_function",
+        "threshold_rule": "isolation_forest_anomaly = (isolation_forest_anomaly_score >= 0.080704)",
+        "threshold_rationale": "95.0th percentile of validation anomaly scores used as experimental operating point (flags top 5.0% most isolated validation observations, frozen strictly before evaluating test set). Not a verified true anomaly rate."
+    },
+    "evaluation_summary": {
+        "validation": {
+            "total_rows": 5778,
+            "scored_rows": 5778,
+            "unavailable_score_rows": 0,
+            "anomaly_count": 289,
+            "anomaly_percentage": 5.0
+        },
+        "test": {
+            "total_rows": 5778,
+            "scored_rows": 5778,
+            "unavailable_score_rows": 0,
+            "anomaly_count": 650,
+            "anomaly_percentage": 11.25
+        }
+    }
+}
